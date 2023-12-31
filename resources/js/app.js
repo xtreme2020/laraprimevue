@@ -2,7 +2,7 @@ import './bootstrap';
 import '../css/app.css';
 import PrimeVue from 'primevue/config';
 import '@/primevue/assets/styles.scss';
-import 'primevue/resources/themes/lara-light-indigo/theme.css';
+//import 'primevue/resources/themes/lara-light-indigo/theme.css';
 import Toast from 'primevue/toast';
 import ToastService from 'primevue/toastservice';
 import DialogService from 'primevue/dialogservice';
