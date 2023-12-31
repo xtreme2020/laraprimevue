@@ -12,6 +12,9 @@ import Tooltip from 'primevue/tooltip';
 import Ripple from 'primevue/ripple';
 import StyleClass from 'primevue/styleclass';
 import router from "@/primevue/router";
+import ConfirmDialog from 'primevue/confirmdialog';
+import ConfirmPopup from 'primevue/confirmpopup';
+import Dialog from 'primevue/dialog';
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
@@ -30,10 +33,14 @@ createInertiaApp({
             .use(ToastService)
             .use(DialogService)
             .use(ConfirmationService)
-            .directive('tooltip', Tooltip)
+             .directive('tooltip', Tooltip)
              .directive('badge', BadgeDirective)
              .directive('ripple', Ripple)
              .directive('styleclass', StyleClass)
+             .component('Toast', Toast)
+             .component('ConfirmDialog', ConfirmDialog)
+             .component('ConfirmPopup', ConfirmPopup)
+             .component('Dialog', Dialog)
             .use(ZiggyVue)
             .use(router)
             .mount(el);
