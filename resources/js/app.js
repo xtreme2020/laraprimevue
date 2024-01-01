@@ -11,7 +11,6 @@ import BadgeDirective from 'primevue/badgedirective';
 import Tooltip from 'primevue/tooltip';
 import Ripple from 'primevue/ripple';
 import StyleClass from 'primevue/styleclass';
-import router from "@/primevue/router";
 import ConfirmDialog from 'primevue/confirmdialog';
 import ConfirmPopup from 'primevue/confirmpopup';
 import Dialog from 'primevue/dialog';
@@ -42,7 +41,6 @@ createInertiaApp({
              .component('ConfirmPopup', ConfirmPopup)
              .component('Dialog', Dialog)
             .use(ZiggyVue)
-            .use(router)
             .mount(el);
     },
     progress: {
